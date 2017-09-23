@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean
+		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+	<bean
+		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"></bean>
+
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<!-- 将视图名 渲染后视图的前缀 -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<!-- 渲染后视图的后缀 -->
+		<property name="suffix" value=".jsp" />
+		<!-- 例：视图名为:hello 渲染后：/WEB-INF/jsp/hello.jsp 该页面 -->
+	</bean>
+	
+	<bean name="/hello" class="com.ldu.hello.controller.HelloController"></bean>
+</beans>

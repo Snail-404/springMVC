@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="springmvc_13_restful_curd"
+  id="myeclipse.1505741700526"
+  context-root="/springmvc_13_restful_curd"
+  j2ee-spec="5.0"
+  archive="springmvc_13_restful_curd.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

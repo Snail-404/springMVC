@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mySpringmvc_08_fileupload"
+  id="myeclipse.1503307296308"
+  context-root="/mySpringmvc_08_fileupload"
+  j2ee-spec="5.0"
+  archive="mySpringmvc_08_fileupload.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

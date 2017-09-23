@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mySpringmvc_07_luanma"
+  id="myeclipse.1503145396794"
+  context-root="/mySpringmvc_07_luanma"
+  j2ee-spec="5.0"
+  archive="mySpringmvc_07_luanma.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

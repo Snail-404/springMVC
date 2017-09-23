@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mySpringmvc_11_loginInterceptor"
+  id="myeclipse.1503644129437"
+  context-root="/mySpringmvc_11_loginInterceptor"
+  j2ee-spec="5.0"
+  archive="mySpringmvc_11_loginInterceptor.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

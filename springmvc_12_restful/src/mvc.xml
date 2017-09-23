@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        
+	
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!--配置视图BeanNameViewResolver解析器：使用视图名字解析视图  -->
+	<!--通过 定义order属性来定义师徒解析器的优先级，值越小优先级越高，InternalResourceViewResolver的order值最大 -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order" value="100"></property>
+	</bean>
+	
+	<context:component-scan base-package="com.ldu"></context:component-scan>
+	<!--
+		<mvc:view-controller>会使原来的一些映射失效
+		需要添加<mvc:annotation-driven></mvc:annotation-driven>
+	  -->
+	<mvc:view-controller path="/succ" view-name="success" />
+	<mvc:view-controller path="/succ2" view-name="MyJsp" />
+	<mvc:annotation-driven></mvc:annotation-driven>
+</beans>
